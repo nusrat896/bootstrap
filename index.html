@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap Typography Demo</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Nice font (optional) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:linear-gradient(180deg,#f8fafc,#ffffff);} 
+    .glass{background:rgba(255,255,255,.75);backdrop-filter:blur(8px);border-radius:1.25rem;box-shadow:0 20px 40px rgba(0,0,0,.06);} 
+    .section{padding:2.5rem 2rem;margin-bottom:1.5rem;border:1px solid #eef1f4}
+    .badge-pill{border-radius:2rem}
+    .code{font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;}
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <header class="mb-5 text-center">
+      <span class="badge rounded-pill text-bg-dark px-3 py-2">Bootstrap 5 • Typography</span>
+      <h1 class="display-4 fw-bold mt-3">Beautiful, Readable <span class="text-primary">Type</span></h1>
+      <p class="lead text-secondary">Quick showcase of headings, display text, lead, inline elements, blockquotes, lists, code, and helpers—decorated with a soft glassy look.</p>
+    </header>
+
+    <!-- Headings / Display -->
+    <section class="section glass">
+      <h2 class="h4 text-uppercase text-muted mb-3">Headings & Display</h2>
+      <h1>h1. Bootstrap heading</h1>
+      <h2>h2. Bootstrap heading</h2>
+      <h3>h3. Bootstrap heading</h3>
+      <h4>h4. Bootstrap heading</h4>
+      <h5>h5. Bootstrap heading</h5>
+      <h6 class="mb-4">h6. Bootstrap heading</h6>
+      <p class="display-1 fw-semibold">Display 1</p>
+      <p class="display-4">Display 4</p>
+      <p class="lead">This is <strong>lead</strong> text—great for quick summaries.</p>
+    </section>
+
+    <!-- Inline text elements -->
+    <section class="section glass">
+      <h2 class="h4 text-uppercase text-muted mb-3">Inline Text Styles</h2>
+      <p>Use <mark>mark</mark> to highlight, <del>del</del> for deletions, and <ins>ins</ins> for insertions.</p>
+      <p><small class="text-muted">Small muted text for fine print.</small></p>
+      <p>Keyboard input: <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+      <p class="code">Code snippet: <code>&lt;button class="btn btn-primary"&gt;Save&lt;/button&gt;</code></p>
+    </section>
+
+    <!-- Blockquote / Figure -->
+    <section class="section glass">
+      <h2 class="h4 text-uppercase text-muted mb-3">Quotes</h2>
+      <figure>
+        <blockquote class="blockquote">
+          <p>Good typography is invisible. Bad typography is everywhere.</p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Unknown, in <cite title="Source Title">Design Lore</cite></figcaption>
+      </figure>
+    </section>
+
+    <!-- Lists -->
+    <section class="section glass">
+      <h2 class="h4 text-uppercase text-muted mb-3">Lists</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h6 class="text-muted">Unordered</h6>
+          <ul>
+            <li>Scalable</li>
+            <li>Readable</li>
+            <li>Accessible</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h6 class="text-muted">Ordered</h6>
+          <ol class="mb-0">
+            <li>Plan</li>
+            <li>Design</li>
+            <li>Ship</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Utilities -->
+    <section class="section glass">
+      <h2 class="h4 text-uppercase text-muted mb-3">Helpful Utilities</h2>
+      <p class="text-uppercase">Uppercase utility</p>
+      <p class="fw-bold">Bold text with <code>.fw-bold</code></p>
+      <p class="fst-italic">Italic text with <code>.fst-italic</code></p>
+      <p class="text-decoration-underline">Underlined with <code>.text-decoration-underline</code></p>
+      <p class="text-primary">The theme primary color</p>
+      <p class="text-success">Success color</p>
+      <p class="text-danger">Danger color</p>
+      <p class="text-center">Centered text</p>
+      <p class="text-md-start text-center">Responsive align: start on md+, center on xs</p>
+    </section>
+
+    <!-- Cards using type -->
+    <section class="section glass">
+      <h2 class="h4 text-uppercase text-muted mb-3">Typography in Cards</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <span class="badge text-bg-primary badge-pill">New</span>
+              <h3 class="card-title mt-3">Card Title</h3>
+              <h6 class="card-subtitle text-muted">Subtitle using <code>.card-subtitle</code></h6>
+              <p class="card-text mt-3">Cards pair nicely with Bootstrap typography utilities. Keep paragraphs short and scannable.</p>
+              <a class="btn btn-dark btn-sm" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h4 class="mb-3">Feature List</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">• Clean hierarchy</li>
+                <li class="list-group-item">• Clear contrast</li>
+                <li class="list-group-item">• Consistent rhythm</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center mt-5 text-muted small">Built with Bootstrap 5.3 — responsive and accessible out of the box.</footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
